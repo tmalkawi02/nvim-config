@@ -21,6 +21,14 @@ return {
 			jsonc = { "fixjson" },
 			typescript = { "prettier", "prettierd" },
 			cpp = { "clang-format" },
+			sql = { "sql_formatter" },
+		},
+		formatters = {
+			sql_formatter = {
+				inherit = false,
+				command = "sql-formatter",
+				args = { "--config", ".sql-formatter.json" },
+			},
 		},
 		notify_on_error = true,
 	},

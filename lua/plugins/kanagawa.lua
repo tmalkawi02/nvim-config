@@ -10,7 +10,7 @@ return {
 		statementStyle = { bold = false },
 		typeStyle = {},
 		keywordStyle = {},
-		transparent = true,
+		transparent = false,
 		dimInactive = false,
 		terminalColors = true,
 		theme = "wave",

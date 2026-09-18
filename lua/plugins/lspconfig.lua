@@ -4,7 +4,14 @@ return {
 		"neovim/nvim-lspconfig",
 		event = { "BufNewFile", "BufReadPre", "BufReadPost" },
 		opts = {
-			servers = { "clangd", "pyright", "lua_ls", "ts_ls", "jsonls" },
+			servers = {
+				"clangd",
+				"pyright",
+				"lua_ls",
+				"ts_ls",
+				"jsonls",
+				"sqls",
+			},
 		},
 		init = function()
 			vim.g.coq_settings = {
@@ -53,6 +60,9 @@ return {
 				settings = {
 					Lua = {},
 				},
+			})
+			vim.lsp.config("sqls", {
+				cmd = { "sqls", "-config", "~/.config/sqls/config.yaml" },
 			})
 		end,
 	},
