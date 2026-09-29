@@ -2,6 +2,7 @@ return {
 	"rebelot/kanagawa.nvim",
 	priority = 4000,
 	lazy = false,
+
 	opts = {
 		compile = false,
 		undercurl = false,
@@ -17,6 +18,15 @@ return {
 		background = {
 			dark = "wave",
 			light = "lotus",
+		},
+		colors = {
+			wave = {
+				ui = {
+					float = {
+						bg = "none",
+					},
+				},
+			},
 		},
 	},
 	config = true,

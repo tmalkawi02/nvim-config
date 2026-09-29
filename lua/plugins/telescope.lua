@@ -1,6 +1,5 @@
 return {
 	"nvim-telescope/telescope.nvim",
-	tag = "0.1.8",
 	dependencies = {
 		{ "BurntSushi/ripgrep" },
 		{ "nvim-lua/plenary.nvim" },
